@@ -17,23 +17,28 @@ An **AI-powered OCR and document analysis system** designed to seamlessly extrac
 ```text
 OCR-Based-Document-Analysis-System/
 │
-├── Docker/                  # Docker deployment configurations
-├── ocr_engine/              # Core OCR engine configurations
-│   ├── paddle_ocr.py        # PaddleOCR pipeline integration
-│   └── text_extractor.py    # Logic to format and save extracted text
+├── ocr_engine/                 # Core Deep Learning OCR configurations
+│   ├── __init__.py
+│   ├── paddle_ocr.py          # PaddleOCR initialization & inference pipelines
+│   └── text_extractor.py      # Logic for text parsing and output file creation
 │
-├── preprocessing/           # Document and image transformation pipeline
-│   ├── image_preprocess.py  # OpenCV image enhancement scripts
-│   ├── pdf_converter.py     # PDF-to-image extraction modules
-│   └── docx_reader.py       # Word document parsing utilities
+├── preprocessing/              # CV preprocessing & document transformation pipelines
+│   ├── __init__.py
+│   ├── docx_reader.py          # Word document text mining utility
+│   ├── image_preprocess.py     # Custom OpenCV filters (thresholding, noise reduction)
+│   └── pdf_converter.py        # Multi-page PDF to rasterized image stream engine
 │
-├── utils/                   # Shared pipeline helpers
-│   └── file_handler.py      # Secure file uploading and format verification
+├── utils/                      # Shared helper modules
+│   ├── __init__.py
+│   └── file_handler.py         # Secure upload operations & strict file extension routing
 │
-├── appModel.py              # Main Streamlit web application entry point
-├── .gitignore               # System file exclusion rules
-├── LICENSE                  # Project licensing details
-└── README.md                # Project documentation
+├── results/                    # Default runtime target directory for structured text file logs
+│
+├── .gitignore                  # Environment, virtual environment, and system file exclusion rules
+├── LICENSE                     # MIT Open Source License distribution parameters
+├── ocr_engine.zip              # Pre-packaged archive containing core model modules
+└── final.zip                   # Master deployable backup containing application assets
+
 ```
 
 ---
