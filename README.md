@@ -1,4 +1,4 @@
-# Deep Learning OCR Document Analysis System
+# OCR - Based Document Analysis System (DL)
 
 An **AI-powered OCR and document analysis system** designed to seamlessly extract and analyze text from images, PDFs, and Word documents. Built with a Streamlit interface, this application leverages advanced deep learning frameworks including **PaddleOCR**, **EasyOCR**, and **OpenCV** to preprocess inputs and generate structured text outputs efficiently.
 
